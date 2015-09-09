@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>中国新媒体电商联盟成立大会</title>
+		<meta name="keywords" content="{$SEO['keyword']}">
+		<meta name="description" content="{$SEO['description']}">
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css"   href="css/jquery.booklet.latest.css" />
+	    <script language="javascript" type="text/javascript" src="js/jquery1.42.min.js"></script>
+        <script language="javascript" type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+		<script language="JavaScript" type="text/javascript" src="js/jquery.cxscroll.min.js" ></script>
+
+	</head>
+	<body>
+		<div class="top">
+			<a name="top">&nbsp;</a>
+			
+		</div>
+	<div class="main" style="margin-top: 406px;">
+		<div class="nav" style="margin-top: 10px;">
+			<a><img src="img/nav.png" width="984px" height="154px"/>  </a>
+			
+			
+		</div>
+		<div class="menu" style="position: fixed; right: 50px; " >
+			<ul>
+
+				<li style="width: 75px; height: 30px; text-align: center; font-size: 16px; margin-top: 5px;"><a href="#con1">会议动态</a></li>
+				<li style="width: 75px; height: 30px; text-align: center; font-size: 16px; margin-top: 5px;"><a href="#con2">会议议题</a></li>
+				<li style="width: 75px; height: 30px; text-align: center; font-size: 16px; margin-top: 5px;"><a href="#con3">邀请参会</a></li>
+				<li style="width: 75px; height: 30px; text-align: center; font-size: 16px; margin-top: 5px;"><a href="#con4">与会嘉宾</a></li>
+				<li style="width: 75px; height: 30px; text-align: center; font-size: 16px; margin-top: 5px;"><a href="#con5">旅游风光</a></li>
+				<li style="width: 75px; height: 30px; text-align: center; font-size: 16px; margin-top: 5px;"><a href="#con6">视频欣赏</a></li>
+				<li style="width: 75px; height: 30px; text-align: center; font-size: 16px; margin-top: 5px;"><a href="#bottom">参会单位</a></li>
+				<li style="width: 75px; height: 30px; text-align: center; font-size: 16px; margin-top: 5px;"><a href="#top">返回顶部</a></li>
+			</ul>
+			
+			
+		</div>
+		<div class="toutiao" style="margin-top: 6px; font-size: 15px;  height: 80px;">
+			
+			{php $where = " status=99 AND catid=725 AND posids=1";}
+			{pc:content action="lists" catid="725"  where="$where" order="id" thumb="" moreinfo=""  num="1" }
+			{loop $data $n $r}			
+			
+			<h1 style="text-align: center; font-size: 38px; line-height: 80px; color: #020001;"><a href="{$r[url]}" style="color: #020001;">{$r[title]}</a></h1>
+			{/loop}
+			{/pc}	
+			
+			<!--<ul style="margin: 0 auto; text-align: center; margin-top: 15px;">
+			{php $where = " status=99 AND catid=725 AND posids<>1";}
+			{pc:content action="lists" catid="725"  where="$where" order="inputtime DESC" thumb="" moreinfo=""  num="3" }
+			{loop $data $n $r}				
+				
+			<a href="{$r[url]}" style="border-right:2px solid lavender ; padding-right: 5px;">{$r[title]}</a>
+
+			{/loop}
+			{/pc}			-->
+			
+<!--			<a href="http://zt.10yan.com/html/dsdh/hydt/">更多</a>-->
+			
+			</ul>	
+		</div>
+		
+		
+		<div class="con1">
+			<div class="con1-lft" style="float: left;display: inline-block;overflow: hidden;white-space: nowrap;">
+					<div class="focusBox">
+						<ul class="pic">
+								{pc:content action="lists" catid="736" order="id desc" thumb="1" moreinfo=""  num="4" }
+								{loop $data $n $r}							
+								<li style="display: block;"><a href="{$r[url]}" target="_blank" ><img src="{$r[thumb]}" width="570px" height="320px" /></a></li>
+
+								{/loop}
+								{/pc}								
+								
+								
+								
+						</ul>
+						<div class="txt-bg"></div>
+						<div class="txt">
+							<ul>
+								
+								{pc:content action="lists" catid="736" order="id desc" thumb="1" moreinfo=""  num="4" }
+
+								{loop $data $n $r}								
+								<li><a href="{$r[url]}">{$r[title]}</a></li>
+								{/loop}
+								{/pc}
+								
+							</ul>
+						</div>			
+						<ul class="num">
+							<li><a>1</a><span></span></li>
+							<li><a>2</a><span></span></li>
+							<li><a>3</a><span></span></li>
+							<li><a>4</a><span></span></li>
+							<li style="width: 36px;"><a href="http://zt.10yan.com/html/dsdh/hydt/" target="_blank">更多</a><span></span></li>
+						</ul>
+
+					<script type="text/javascript">
+						jQuery(".focusBox").slide({ titCell:".num li", mainCell:".pic",effect:"fold", autoPlay:true,trigger:"click",
+						startFun:function(i){
+						jQuery(".focusBox .txt li").eq(i).animate({"bottom":0}).siblings().animate({"bottom":-36});
+						}
+						});	
+					</script>
+				</div>
+	
+			</div>
+			<div class="con1-rht">
+				<div class="con1nav" style="padding: 0 5px; height: 24px;">
+					<a name="con1"  style="float: left;"><img src="img/con1nav.png" />  </a>
+					<span style="float: right;"><a href="http://zt.10yan.com/html/dsdh/hydt/" target="_blank"><img src="img/more.png" />  </a>  </span>
+				</div>
+				<div class="con1-rht-con">
+					<ul style="width: 336px; height: 75px; margin-top: 10px; margin-left: auto; margin-right: auto; margin-bottom: 4px;">
+						
+					    <!--{php $where = " status=99 AND catid=725 AND posids=1";}-->
+					    
+					    {php $where = " status=99 AND catid=725 AND posids!=1";}
+						{pc:content action="lists" catid="725" thumb="" order="listorder asc" num="4" where="$where";}
+						{loop $data $r}							
+						<li style="font-size: 17px; text-align: center;margin-top: 5px;"><a href="{$r[url]}" target="_blank"><b>{str_cut($r[title],60,'...')}</b></a>  </li>
+						<li style="text-indent: 2em; margin-top: 5px; color: #555555;">{str_cut($r[description],120,'...')}<a href="{$r[url]}" target="_blank">[详细]</a></li>
+						{/loop}
+						{/pc}		
+						
+					</ul>
+					
+					
+					
+					<!--<ul style="width: 320px; height: 200px; margin-left: auto; margin-right: auto; font-size: 15px; line-height: 31px;">
+						
+						{php $where = " status=99 AND catid=725 AND posids<>1";}
+					    {pc:content action="lists" catid="725"  where="$where" order="inputtime DESC" thumb="" moreinfo=""  num="7" }
+					    {loop $data $n $r}						
+						<li><b>·</b><a href="{$r[url]}">{str_cut($r[title],60,'...')}</a></li>
+						{/loop}
+						{/pc}
+					</ul>	-->
+				</div>	
+			</div>	
+		</div>
+		<div class="con2">
+			<a href="http://www.10yan.com/2015/0810/224297.shtml" target="_blank"  name="con2"><img src="img/con2.png" /> </a>
+			
+			
+		</div>
+		<div class="con3" style="position: relative;">
+				<a name="con3">&nbsp;</a>
+				<!--费用说明-->
+				<div style="position: absolute; width: 105px; height: 105px;  left: 180px; top: 80px;"><a href="http://www.10yan.com/2015/0810/224297.shtml"></a></div>
+				<!--交通提示-->
+				<div style="position: absolute; width: 105px; height: 105px;  left: 50px; top: 140px;"><a href="http://www.10yan.com/2015/0810/224297.shtml"></a></div>
+				<!--参会回执表-->
+				<div style="position: absolute; width: 105px; height: 105px;  left: 320px; top: 140px;"><a href="http://upload.10yan.com/2015/0810/1439191355756.doc"></a></div>
+				<!--行程安排-->
+				<div style="position: absolute; width: 105px; height: 105px;  left: 50px; top: 280px;"><a href="http://www.10yan.com/2015/0810/224297.shtml"></a></div>
+				<!--在线报名-->
+				<div style="position: absolute; width: 105px; height: 105px;  left: 320px; top: 280px;"><a href="http://eqxiu.com/s/8eWhiIv5"></a></div>
+				<!--注意事项-->
+				<div style="position: absolute; width: 105px; height: 105px;  left: 180px; top: 360px;"><a href="http://www.10yan.com/2015/0810/224297.shtml"></a></div>
+				<div style="position: absolute; width: 205px; height: 360px;  left: 480px; top: 95px; "><a style="width: 205px; height: 360px; display: block;"   href="http://eqxiu.com/s/8eWhiIv5"></a>   </div>
+			
+			
+			
+		</div>
+		<div class="con4">
+			<div class="con4-nav">
+				<a name="con4"><img src="img/con4nav.png" style="display: block; margin: 0 auto;" />	</a>	
+			</div>
+			<div class="con4-con">
+				<ul style="width: 960px;  padding-left: 10px; padding-right: 10px;   margin: 0 auto; margin-top: 15px;">
+					
+                    {pc:content action="lists" catid="727" thumb="1" order="inputtime DESC" num=""}
+                    {loop $data $v}					
+					<li style="width: 240px; height: 250px; float: left;">
+						<a href="{$v[url]}"><img src="{$v[thumb]}" width="225px" height="167px"></a>	
+						<p style="text-align: center; width: 225px; margin-top: 10px; margin-bottom: 5px;">{$v[title]}</p>
+						<p style="text-align: center; width: 225px; ">{$v[ctitle]}</p>
+						<p style="text-align: center; width: 225px; ">{$v[other]}</p>
+					</li>
+					{/loop}{/pc}
+                    </ul>
+
+
+				</ul>	
+			</div>	
+		</div>
+		<div class="con5">
+			<div class="con5nav" style="margin-bottom: 20px;">
+				<a name="con5"><img src="img/con5nav.png" style="display: block; margin: 0 auto;" /> </a>
+			</div>
+			<div class="txMovie" style="margin:0 auto">
+				 <ul class="focus_pic" id="focus_pic_list">
+                    {pc:content action="lists" catid="728" thumb="1" order="inputtime DESC" num=""}
+                    {loop $data $v}				 	
+					<li><a href="{$v[url]}" target="_blank"><img src="{$v[thumb]}" width="966px" height="420px"/></a></li>
+					{/loop}{/pc}
+					<!--<li><a href="http://www.SuperSlide2.com" target="_blank"><img src="img/wd.jpg" /></a></li>
+					<li><a href="http://www.SuperSlide2.com" target="_blank"><img src="img/wd.jpg" /></a></li>
+					<li><a href="http://www.SuperSlide2.com" target="_blank"><img src="img/wd.jpg" /></a></li>
+					<li><a href="http://www.SuperSlide2.com" target="_blank"><img src="img/wd.jpg" /></a></li>
+					<li><a href="http://www.SuperSlide2.com" target="_blank"><img src="img/wd.jpg" /></a></li>
+					<li><a href="http://www.SuperSlide2.com" target="_blank"><img src="img/wd.jpg" /></a></li>
+					<li><a href="http://www.SuperSlide2.com" target="_blank"><img src="img/wd.jpg" /></a></li>
+					<li><a href="http://www.SuperSlide2.com" target="_blank"><img src="img/wd.jpg" /></a></li>
+					<li><a href="http://www.SuperSlide2.com" target="_blank"><img src="img/wd.jpg" /></a></li>
+					<li><a href="http://www.SuperSlide2.com" target="_blank"><img src="img/wd.jpg" /></a></li>
+					<li><a href="http://www.SuperSlide2.com" target="_blank"><img src="img/wd.jpg" /></a></li>-->
+				</ul>
+			
+				<div class="focus_nav">
+					<ul id="focus_smaillPic_list">
+						
+                    	{pc:content action="lists" catid="728" thumb="1" order="inputtime DESC" num=""}
+                    	{loop $data $v}						
+						<li><a href="{$v[url]}" target="_blank"><img src="{$v[thumb]}"><span class="cover"></span></a><b>▲</b></li>
+						{/loop}{/pc}
+						
+						<!--<li><a><img src="img/wd.jpg"><span class="cover"></span></a><b>▲</b></li>
+						<li><a><img src="img/wd.jpg"><span class="cover"></span></a><b>▲</b></li>
+						<li><a><img src="img/wd.jpg"><span class="cover"></span></a><b>▲</b></li>
+						<li><a><img src="img/wd.jpg"><span class="cover"></span></a><b>▲</b></li>
+						<li><a><img src="img/wd.jpg"><span class="cover"></span></a><b>▲</b></li>
+						<li><a><img src="img/wd.jpg"><span class="cover"></span></a><b>▲</b></li>
+						<li><a><img src="img/wd.jpg"><span class="cover"></span></a><b>▲</b></li>
+						<li><a><img src="img/wd.jpg"><span class="cover"></span></a><b>▲</b></li>
+						<li><a><img src="img/wd.jpg"><span class="cover"></span></a><b>▲</b></li>
+						<li><a><img src="img/wd.jpg"><span class="cover"></span></a><b>▲</b></li>
+						<li><a><img src="img/wd.jpg"><span class="cover"></span></a><b>▲</b></li>-->
+					</ul>
+					<a href="javascript:;" title="上一个" class="navPrev">上一个</a>
+					<a href="javascript:;" title="下一个" class="navNext">下一个</a>
+				</div>
+			
+				<div class="focus_text">
+					<ul id="focus_content_list">
+						
+						
+						
+                    	{pc:content action="lists" catid="728"  order="inputtime DESC" num="" moreinfo="1"}
+                    	{loop $data $v}
+                    	
+						 <!--<?php
+						    $id = $v['id'];
+						    $sql = "SELECT `content` FROM `th_news_data` WHERE `id`='$id' LIMIT 0 , 1";
+						    $query = mysql_query($sql);
+						    while($row=mysql_fetch_array($query)){
+						    	$content = preg_replace("|<STYLE>(.*?)<\/STYLE>|s","",$row[content]);
+						    }
+						    ?>                   	-->
+						<li>
+							<h2><a href="{$v[url]}" target="_blank">{$v[title]}</a></h2>
+							<!--<p class="sub_tit">勇夺第49届金马奖三项大奖</p>-->
+							
+							
+							
+							<p class="c_txt4 mod_desc" style="color: #fff;">{$v[content]}</p>
+							
+
+						</li>
+						{/loop}{/pc}
+
+
+					</ul>
+				</div>
+			
+			</div>			
+			<script type="text/javascript">
+				//大图和文字切换
+				jQuery(".txMovie").slide({ titCell:".focus_nav li", mainCell:".focus_pic", targetCell:".focus_text li", autoPlay:true,delayTime:100,startFun:function(i){
+						//控制小图自动翻页
+						if(i==0){ jQuery(".txMovie .navPrev").click() } else if( i%11==0 ){ jQuery(".txMovie .navNext").click()}
+					}
+				});
+				//小图滚动
+				jQuery(".txMovie").slide({ mainCell:".focus_nav ul",prevCell:".navPrev",nextCell:".navNext",effect:"left",vis:11,scroll:11,delayTime:0,autoPage:true,pnLoop:false});
+			</script>			
+			
+			
+			
+		</div>
+        
+        <!--<div class="con4">
+			<div class="con4-nav">
+				<a name="con4"><img src="img/con8nav.png" style="display: block; margin: 0 auto;" />	</a>	
+			</div>
+			<div class="con4-con">
+           <DIV style="height: 975px; overflow: hidden"><IFRAME height=9750 marginHeight=0 src="http://zt.10yan.com/html/dsdh/lvyou/index.html" frameBorder=0 width=1000 allowTransparency marginWidth=0 scrolling=no align=center></IFRAME></DIV>	
+			</div>	
+		</div>        -->
+        <div class="book" style="width: 980px; height: 1050px; margin: 0 auto;">
+		 	    <div id="mybook">
+			        <div>
+		
+			        </div>
+			        <div title="first page">
+			            <a><img src="img/1-2.jpg"> </a>
+			        </div>
+			        <div title="second page">
+			            <a><img src="img/2-1.jpg"> </a>
+			        </div>
+			        <div title="third page">
+			            <a><img src="img/2-2.jpg"> </a>
+			        </div>
+			        <div title="fourth page">
+			            <a><img src="img/3-1.jpg"> </a>
+			        </div>
+			        <div title="fifth page">
+			            <a><img src="img/3-2.jpg"> </a>
+			        </div>
+			        <div title="sixth page">
+			        	<a><img src="img/1-1.jpg"> </a>
+			        </div>
+			        <div title="seventh page">
+		
+			        </div>	        
+		
+			    </div>
+		
+		
+		    <script src="js/jquery-2.1.0.min.js"></script>
+			<script> window.jQuery || document.write('<script src="js/jquery-2.1.0.min.js"><\/script>') </script>
+		    <script src="js/jquery-ui-1.10.4.min.js"></script>
+			<script> window.jQuery.ui || document.write('<script src="js/jquery-ui-1.10.4.min.js"><\/script>') </script>
+		    <script src="js/jquery.easing.1.3.js"></script>
+		    <script src="js/jquery.booklet.latest.js"></script>
+			<script>
+			    $(function () {		
+			        $("#mybook").booklet({
+			        	width: 980,
+			        	height: 1050,
+			        	
+			        });
+			    });
+		    </script>       	
+        </div>
+        
+        
+		<div class="con6">
+			<div class="con6-nav" style="margin: 0 auto;">
+				<a name="con6"><img src="img/con6nav.png" style="display: block; margin: 0 auto;" /> </a>
+			</div>
+			<div class="con6-con">
+				<ul style="width: 960px; height: 390px; margin: 0 auto; margin-top: 16px;">
+                    {pc:content action="lists" catid="729" thumb="1" order="listorder asc" num=""}
+                    {loop $data $v}						
+					
+					<li style="width: 240px; height: 195px; float: left;">
+						<a href="{$v[url]}" target="_blank"><img src="{$v[thumb]}" width="225px" height="146px"/> </a>
+						<p style="text-align: center; margin-top: 10px; margin-bottom: 10px; width: 225px;">{$v[title]} </p>
+					</li>
+					{/loop}{/pc}
+
+				</ul>
+				<div class="adSlide1" style="margin-top: 5px;">
+					<!--<div class="hd"><ul></ul></div>-->
+					<div class="bd">
+						<ul>
+							<li><a href="http://www.hbyoo.com/"><img src="img/banner.png"   width="999px" height="81px" /></a></li>
+							<li><a href="http://www.hbyoo.com/"><img src="img/banner.png"   width="999px" height="81px" /></a></li>
+						</ul>
+					</div>
+		
+					<script type="text/javascript">jQuery(".adSlide1").slide({ titCell:".hd ul", mainCell:".bd ul",delayTime:2000,interTime:5000,autoPlay:true,effect:"top",autoPage:true });</script>			
+				</div>				
+			<!--<div>
+				<a><img src="img/banner.png" /> </a>
+			
+			
+			</div>	-->
+				
+			</div>
+		
+		</div>
+
+		<div class="bottom">
+			<div class="bottom-nav">
+				<a name="bottom"><img src="img/con7nav.png" style="display: block; margin: 0 auto;" /> </a>
+			</div>	
+			<div class="bottom-con" style="margin-top: 20px;">
+				<ul style="width: 950px;  margin: 0 auto;">
+                    {pc:content action="lists" catid="730" thumb="1" order="inputtime DESC" num="100"}
+                    {loop $data $v}					
+					
+					<li style="float: left; width: 190px; height: 75px;"><a href="{$v[url]}"><img src="{$v[thumb]}" width="180px" height="62px"/>  </a>   </li>
+					{/loop}{/pc}
+					<!--<li style="float: left; width: 190px; height: 75px;"><a href="http://www.newswm.com/"><img src="img/ad1.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.w010w.com.cn/index.html"><img src="img/ad2.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.xinhuanet.com/"><img src="img/ad3.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.zjjnews.cn/"><img src="img/ad4.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.10yan.com/"><img src="img/ad5.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.jznews.com.cn/"><img src="img/ad6.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.cnchu.com/"><img src="img/ad7.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.dzrbs.com/"><img src="img/ad8.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://hb.qq.com/"><img src="img/ad9.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.hsdcw.com/"><img src="img/ad10.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.enshi.cn/"><img src="img/ad11.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.kf.cn/"><img src="img/ad12.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.heze.cn/"><img src="img/ad13.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.dahe.cn/"><img src="img/ad14.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.0745news.cn/"><img src="img/ad15.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.0745tv.com/"><img src="img/ad16.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.hbnews.net/"><img src="img/ad17.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.cttimes.cn/Index.html"><img src="img/ad18.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://e23.cn/"><img src="img/ad19.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.qdn.cn/"><img src="img/ad20.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.jn001.com/"><img src="img/ad21.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://zhushan.cn/"><img src="img/ad22.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.zxxww.com/"><img src="img/ad23.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.jjxw.cn/"><img src="img/ad24.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.lyg1.com/"><img src="img/ad25.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.lcxw.cn/"><img src="img/ad26.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.lanews.com.cn/"><img src="img/ad27.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.ldnews.cn/"><img src="img/ad28.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.lyd.com.cn/"><img src="img/ad29.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.mshw.net/"><img src="img/ad30.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.cnncw.cn/"><img src="img/ad31.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.longhoo.net/"><img src="img/ad32.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.01ny.cn/"><img src="img/ad33.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.pdsxww.com/"><img src="img/ad34.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.pyxww.com/"><img src="img/ad35.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.qianlongnews.com/"><img src="img/ad36.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.cnqjw.com/"><img src="img/ad37.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.bycmw.com/"><img src="img/ad38.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://www.rznews.cn/"><img src="img/ad39.png" />  </a>   </li>
+					<li style="float: left; width: 190px; height: 75px;"><a href="http://cnjm3c.com.cn/"><img src="img/ad40.png" />  </a>   </li>-->
+
+
+
+
+				</ul>
+			</div>
+		</div>
+		<div class="footer">
+			<ul>
+				<li><a href="http://www.10yan.com/pages/wzjs.html" target="_blank">关于我们</a> - <a href="http://www.10yan.com/pages/wztd.html" target="_blank">网站团队</a> - <a href="http://www.10yan.com/pages/ggyw.html" target="_blank">广告业务</a> - <a href="http://www.10yan.com/pages/wzdt.html" target="_blank">网站地图</a> - <a href="http://tg.10yan.com/" target="_blank">在线投稿</a> - <a href="http://www.10yan.com/pages/hzhb.html" target="_blank">合作伙伴</a> - <a href="http://movie.10yan.com/wsbl2/fabu.asp" target="_blank">客户投诉</a> - <a href="http://www.10yan.com/rss/rssmap.html" target="_blank" title="rss订阅">RSS订阅</a></li>
+				<li>秦楚网(10yan.com) 版权所有 未经同意不得复制或镜像</li>
+
+				<li>咨询电话：0719-8015822/0719-12301  传真：0719-8125327   QQ群: 243017658</li>
+
+			</ul>			
+			
+			
+		</div>
+</div>
+	</body>
+</html>
